@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.ralphmarondev.cowgpt.navigation.AppNavigation
 import com.ralphmarondev.cowgpt.ui.theme.CowGPTTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CowGPTTheme {
-
+                AppNavigation()
             }
         }
     }
